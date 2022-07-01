@@ -598,7 +598,7 @@ module DrawVariant2 = {
         }
       }
     }
-
+    /*
     let x1 = ox - k * 6 * 8
     let y1 = oy + 8 * k * 9 + 10 + k * 8 * 3
     for i in 0 to 3 * k + k - 1 {
@@ -718,6 +718,7 @@ module DrawVariant2 = {
         }
       }
     }
+ */
   }
   let drawTailAndFins = (ox, oy, k, color, texture) => {
     Generator.drawTexture(
@@ -1023,7 +1024,7 @@ let script = () => {
       Generator.getSelectInputValue("Fish Type"),
     )
 
-    /* if showExtraFolds == true {
+    if showExtraFolds == true {
       DrawVariant2.drawAutoFolds(ox, oy, sizemultiplier)
     }
     DrawVariant2.drawTailAndFins(
@@ -1040,7 +1041,8 @@ let script = () => {
       basefishColor,
       Generator.getSelectInputValue("Fish Type"),
     )
-    DrawVariant2.drawFolds(ox, oy, sizemultiplier)*/
+
+    /* DrawVariant2.drawFolds(ox, oy, sizemultiplier) */
   }
   Generator.fillBackgroundColorWithWhite()
 }
